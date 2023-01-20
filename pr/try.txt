@@ -1,0 +1,26 @@
+import java.util.*;
+public class tryp
+{
+int c;
+void div(int a,int b)
+{
+try
+{
+c=a/b;
+system.out.println("result="+c);
+}
+catch(arithmeticexception e)
+{
+system.out.println("cannot divide by zero");
+}
+}
+public static void main(string[] args)
+{
+tryp obj=new tryp();
+scanner in=new scanner(system.in);
+system.out.println("enetr the value of a&b");
+int no1=in.nextInt();
+int no2=in.nextInt();
+obj.div(no1,no2);
+}
+}
